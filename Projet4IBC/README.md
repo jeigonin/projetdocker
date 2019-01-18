@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Run this commands to have the great configuration on POSTGRE : 
+
+
+docker-compose exec db psql -h localhost -U postgres -c "CREATE USER root WITH PASSWORD 'root';"
+
+
+docker-compose exec db psql -h localhost -U postgres -c "CREATE  database project;"
+
